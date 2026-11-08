@@ -1,0 +1,9 @@
+- insert:
+    - id: novel-memory
+      name: dsh-novel-memory
+      config:
+        # 可选：默认记忆库目录。留空时使用工作区 .dsh-novel.json 的绑定，
+        # 或由 novel_init / novel_use 工具在会话里指定。
+        memoryDir: ''
+        # novel_context 默认返回的最大字符数（约等于中文 token 数）。
+        maxContextChars: 30000

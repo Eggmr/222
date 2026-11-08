@@ -1,0 +1,41 @@
+{
+  "name": "dsh-novel-memory",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 长篇小说记忆库插件：写前读取人物/世界观/世界线，写后自动回写并重建索引。",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "novel",
+    "writing",
+    "memory",
+    "worldbuilding",
+    "中文小说"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0 <5",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.5 <0.3.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
